@@ -1,0 +1,58 @@
+@font-face {
+  font-family: 'Haval';
+  src: url('../assets/fonts/Haval/Haval.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --color-primary: #00CABF;
+  --color-black: #000000;
+  --color-white: #FFFFFF;
+  --color-bg: #F3F3F3;
+  --color-text: #000000;
+  --color-btn-text: #FFFFFF;
+  --color-text-muted: #999999;
+  --color-border: #00CABF;
+
+  --container-max: 1200px;
+  --container-pad: 15px;
+
+  --radius-full: 9999px;
+
+  --transition: 0.2s ease;
+}
+
+body {
+  font-family: 'Haval', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+  font-weight: 300;
+  font-synthesis: weight style;
+  color: var(--color-text);
+  background: var(--color-white);
+}
+
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-inline: auto;
+  padding-inline: var(--container-pad);
+}
+
+.regular   { font-weight: 400; }
+.medium    { font-weight: 500; -webkit-text-stroke: 0.3px currentColor; }
+.semibold  { font-weight: 600; -webkit-text-stroke: 0.5px currentColor; }
+.bold      { font-weight: 700; -webkit-text-stroke: 0.7px currentColor; }
+.heavy     { font-weight: 900; -webkit-text-stroke: 1px   currentColor; }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
